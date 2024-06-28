@@ -1,3 +1,5 @@
+package com.mentoria.helena.confeitaria.classes;
+
 public class SalarioNegativoException extends RuntimeException{
     @Override
     public String getMessage() {

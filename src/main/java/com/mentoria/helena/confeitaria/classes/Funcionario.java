@@ -1,3 +1,5 @@
+package com.mentoria.helena.confeitaria.classes;
+
 public class Funcionario extends Pessoa {
 
     protected double salario;

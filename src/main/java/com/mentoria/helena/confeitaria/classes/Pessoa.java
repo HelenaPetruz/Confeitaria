@@ -1,3 +1,5 @@
+package com.mentoria.helena.confeitaria.classes;
+
 public abstract class Pessoa {
     protected String nome;
     protected int idade;
