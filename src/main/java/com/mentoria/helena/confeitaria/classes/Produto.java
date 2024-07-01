@@ -9,6 +9,8 @@ public class Produto {
     protected String categoria;
     protected String validade;
 
+
+
     public void cadastrarProduto (){
         //tratamento de exeção para validar campos.
     }
@@ -24,8 +26,19 @@ public class Produto {
         this.idProduto = idProduto;
     }
 
-    public void exibir (){
-        System.out.println("========== PRODUTO "+getIdProduto()+": ==========\n Descrição: "+getDescricao()+" \n Preço: "+getPreco()+"\n Categoria: "+getCategoria()+"\n Validade: "+getValidade()+"\n");
+    public String exibir() {
+        String retorno="";
+        String titulo = "========== PRODUTO " + getIdProduto() +" ==========<br>";
+        retorno=retorno.concat(titulo);
+        String descricaoC = "Descrição: "+ getDescricao()+ "<br>";
+        retorno=retorno.concat(descricaoC);
+        String precoC = "Preço: "+getPreco()+ "<br>";
+        retorno=retorno.concat(precoC);
+        String categoriaC = "Categoria: "+ getCategoria() + "<br>";
+        retorno=retorno.concat(categoriaC);
+        String validadeC = "Validade: "+getValidade() + "<br>";
+        retorno=retorno.concat(validadeC);
+        return retorno;
     }
 
     public Produto() {
