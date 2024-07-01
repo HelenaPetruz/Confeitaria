@@ -70,6 +70,7 @@ public class FuncionarioController {
             retorno.append("<br>");
         }
         return retorno.toString();
+
     }
 
 }
