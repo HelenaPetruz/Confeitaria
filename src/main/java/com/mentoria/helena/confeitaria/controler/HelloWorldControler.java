@@ -20,4 +20,11 @@ public class HelloWorldControler {
         hello="Hello world!";
         return hello;
     }
+    @GetMapping("/oi")
+    public String oi(){
+        String hello;
+        hello="Hello world!";
+        return hello;
+    }
+
 }
