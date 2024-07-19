@@ -19,8 +19,9 @@ public class ClienteRepository implements IClienteRepository{
     }
 
     @Override
-    public void add(Cliente cliente) {
-
+    public void add(String nome, int idade, String telefone, String cpf) {
+        Cliente cliente1 = new Cliente(nome,idade,telefone,cpf);
+        listaCliente.add(cliente1);
     }
 
     @Override
