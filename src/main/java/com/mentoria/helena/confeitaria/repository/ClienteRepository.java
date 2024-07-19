@@ -31,6 +31,10 @@ public class ClienteRepository implements IClienteRepository{
 
     @Override
     public void remove(Cliente cliente) {
-
+        for (Cliente c: listaCliente){
+            if (c==cliente){
+                listaCliente.remove(c);
+            }
+        }
     }
 }
