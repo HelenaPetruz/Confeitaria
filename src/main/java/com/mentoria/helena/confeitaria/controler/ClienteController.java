@@ -66,4 +66,20 @@ public class ClienteController {
         return retorno.toString();
     }
 
+    @GetMapping("/mais-velho")
+    public void clienteMaisVelho() {
+        int maiorIdade = 0;
+        for (Cliente c : listaCliente) {
+            if (c.getIdade() > maiorIdade) {
+                maiorIdade = c.getIdade();
+            }
+        }
+        for (Cliente c : listaCliente) {
+            if (c.getIdade() == maiorIdade) {
+                StringBuilder retorno = new StringBuilder("O cliente mais velho é: <br><br>");
+                retorno.append(c.exibir());
+            }
+        }
+    }
+
 }
