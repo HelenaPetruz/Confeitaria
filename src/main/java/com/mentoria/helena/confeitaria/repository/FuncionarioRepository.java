@@ -20,7 +20,7 @@ public class FuncionarioRepository implements IFuncionarioRepository{
 
     @Override
     public void add(String nome, int idade, String telefone, String cpf, double salario) {
-        Funcionario funcionario1 = new Funcionario(nome, idade, telefone, cpf, salario)
+        Funcionario funcionario1 = new Funcionario(nome, idade, telefone, cpf, salario);
         listaFuncionario.add(funcionario1);
     }
 
@@ -38,4 +38,4 @@ public class FuncionarioRepository implements IFuncionarioRepository{
         }
     }
     }
-}
+
