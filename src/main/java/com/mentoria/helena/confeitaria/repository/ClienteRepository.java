@@ -3,38 +3,30 @@ package com.mentoria.helena.confeitaria.repository;
 import com.mentoria.helena.confeitaria.classes.Cliente;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class ClienteRepository implements IClienteRepository{
 
-    ArrayList<Cliente> listaCliente = new ArrayList();
+    HashMap <Integer, Cliente> lista = new HashMap<>();
 
     @Override
     public Cliente get(int idCliente) {
-        for (Cliente c: listaCliente){
-            if (c.getIdCliente()==idCliente){
-                return c;
-            }
-        }
-        return null;
+        return lista.get(idCliente);
     }
 
     @Override
     public void add(String nome, int idade, String telefone, String cpf) {
         Cliente cliente1 = new Cliente(nome,idade,telefone,cpf);
-        listaCliente.add(cliente1);
+        lista.put(cliente1.getIdCliente(),cliente1);
     }
 
     @Override
     public void update(Cliente cliente) {
-
+        lista.put(cliente.getIdade(), cliente);
     }
 
     @Override
     public void remove(Cliente cliente) {
-        for (Cliente c: listaCliente){
-            if (c==cliente){
-                listaCliente.remove(c);
-            }
-        }
+        lista.remove(cliente.getIdCliente());
     }
 }
