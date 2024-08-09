@@ -3,11 +3,6 @@ package com.mentoria.helena.confeitaria.classes;
 public class Cliente extends Pessoa{
     protected static int id=0;
     protected int idCliente;
-    public Cliente() {
-        id++;
-        this.idCliente = id;
-
-    }
 
     public static int getId() {
         return id;
@@ -28,6 +23,8 @@ public class Cliente extends Pessoa{
 
     public Cliente(String nome, int idade, String telefone, String cpf) {
         super(nome, idade, telefone, cpf);
+        id++;
+        this.idCliente = id;
     }
 
     public String exibir() {
