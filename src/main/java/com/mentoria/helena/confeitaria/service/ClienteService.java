@@ -1,9 +1,7 @@
 package com.mentoria.helena.confeitaria.service;
 
 import com.mentoria.helena.confeitaria.classes.Cliente;
-import com.mentoria.helena.confeitaria.repository.ClienteRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
+import com.mentoria.helena.confeitaria.repository.HashMapClienteRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,8 +9,8 @@ import java.util.List;
 @Service
 public class ClienteService {
 
-    private final ClienteRepository clienteRepository;
-    public ClienteService(ClienteRepository clienteRepository){
+    private final HashMapClienteRepository clienteRepository;
+    public ClienteService(HashMapClienteRepository clienteRepository){
         this.clienteRepository = clienteRepository;
     }
 

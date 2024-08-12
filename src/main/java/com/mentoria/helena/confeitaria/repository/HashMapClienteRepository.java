@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 
 @Repository
-public class ClienteRepository implements IClienteRepository{
+public class HashMapClienteRepository implements IClienteRepository{
 
     HashMap <Integer, Cliente> mapa = new HashMap<>();
 
@@ -19,9 +19,9 @@ public class ClienteRepository implements IClienteRepository{
     @Override
     public Cliente add(String nome, int idade, String telefone, String cpf) {
         int id=0;
-        Cliente cliente1 = new Cliente(nome,idade,telefone,cpf);
-        mapa.put(cliente1.getIdCliente(),cliente1);
-        return cliente1;
+        Cliente cliente = new Cliente(nome,idade,telefone,cpf);
+        mapa.put(cliente.getIdCliente(),cliente);
+        return cliente;
     }
 
     @Override
