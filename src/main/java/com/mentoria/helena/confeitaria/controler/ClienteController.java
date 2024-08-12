@@ -26,16 +26,7 @@ public class ClienteController {
 
     @GetMapping("/mais-velho")
     public ResponseEntity<Cliente> clienteMaisVelho() {
-        var lista = clienteService.exibirTodos();
-        int maiorIdade = 0;
-        Cliente cliente=null;
-        for (Cliente c : lista) {
-            if (c.getIdade() > maiorIdade) {
-                maiorIdade = c.getIdade();
-                cliente= c;
-            }
-        }
-        return ResponseEntity.ok(cliente);
+        return ResponseEntity.ok(clienteService.clienteMaisVelho());
     }
 
     @PostMapping

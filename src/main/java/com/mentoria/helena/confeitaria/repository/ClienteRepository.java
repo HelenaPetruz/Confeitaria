@@ -18,6 +18,7 @@ public class ClienteRepository implements IClienteRepository{
 
     @Override
     public Cliente add(String nome, int idade, String telefone, String cpf) {
+        int id=0;
         Cliente cliente1 = new Cliente(nome,idade,telefone,cpf);
         mapa.put(cliente1.getIdCliente(),cliente1);
         return cliente1;

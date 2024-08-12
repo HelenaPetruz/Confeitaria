@@ -23,8 +23,7 @@ public class Cliente extends Pessoa{
 
     public Cliente(String nome, int idade, String telefone, String cpf) {
         super(nome, idade, telefone, cpf);
-        id++;
-        this.idCliente = id;
+
     }
 
     public String exibir() {
