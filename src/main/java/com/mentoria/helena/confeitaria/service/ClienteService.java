@@ -11,8 +11,10 @@ import java.util.List;
 @Service
 public class ClienteService {
 
-    @Autowired
-    ClienteRepository clienteRepository;
+    private final ClienteRepository clienteRepository;
+    public ClienteService(ClienteRepository clienteRepository){
+        this.clienteRepository = clienteRepository;
+    }
 
     public Cliente adicionarCliente(String nome, int idade, String telefone, String cpf){
         return clienteRepository.add(nome, idade, telefone, cpf);
