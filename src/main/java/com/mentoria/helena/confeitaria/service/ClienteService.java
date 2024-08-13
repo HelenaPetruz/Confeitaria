@@ -14,8 +14,8 @@ public class ClienteService {
         this.clienteRepository = clienteRepository;
     }
 
-    public Cliente adicionarCliente(String nome, int idade, String telefone, String cpf){
-        return clienteRepository.add(nome, idade, telefone, cpf);
+    public Cliente adicionarCliente(Cliente cliente){
+        return clienteRepository.add(cliente);
     }
 
     public List<Cliente> exibirTodos(){

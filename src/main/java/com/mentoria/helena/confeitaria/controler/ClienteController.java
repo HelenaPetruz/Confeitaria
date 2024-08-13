@@ -31,7 +31,7 @@ public class ClienteController {
 
     @PostMapping
     public ResponseEntity<Cliente> adicionarCliente (@RequestBody Cliente cliente){
-        Cliente clienteLegal = clienteService.adicionarCliente(cliente.getNome(), cliente.getIdade(), cliente.getTelefone(), cliente.getCpf());
+        Cliente clienteLegal = clienteService.adicionarCliente(cliente);
         return ResponseEntity.ok(clienteLegal);
     }
 

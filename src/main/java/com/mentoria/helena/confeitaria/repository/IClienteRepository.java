@@ -6,7 +6,7 @@ import java.util.List;
 public interface IClienteRepository {
 
     Cliente get (int idCliente);
-    Cliente add (String nome, int idade, String telefone, String cpf);
+    Cliente add (Cliente cliente);
     void update (Cliente cliente);
     void remove (Cliente cliente);
     List<Cliente> getList ();

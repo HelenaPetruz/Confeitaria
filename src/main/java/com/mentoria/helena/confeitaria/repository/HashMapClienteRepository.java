@@ -17,11 +17,10 @@ public class HashMapClienteRepository implements IClienteRepository{
     }
 
     @Override
-    public Cliente add(String nome, int idade, String telefone, String cpf) {
-        int id=0;
-        Cliente cliente = new Cliente(nome,idade,telefone,cpf);
-        mapa.put(cliente.getIdCliente(),cliente);
-        return cliente;
+    public Cliente add(Cliente cliente) {
+        Cliente c = new Cliente(cliente.getNome(),cliente.getIdade(),cliente.getTelefone(),cliente.getCpf());
+        mapa.put(c.getIdCliente(),c);
+        return c;
     }
 
     @Override

@@ -20,7 +20,6 @@ public class Cliente extends Pessoa{
         this.idCliente = idCliente;
     }
 
-
     public Cliente(String nome, int idade, String telefone, String cpf) {
         super(nome, idade, telefone, cpf);
 
