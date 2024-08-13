@@ -16,7 +16,7 @@ public class HashMapProdutoRepository implements IProdutoRepository{
     @Override
     public void add(String descricao, double preco, String categoria, String validade) {
         Produto produto = new Produto(descricao, preco, categoria, validade);
-        mapa.put(produto.getId(), produto);
+        mapa.put(produto.getIdProduto(), produto);
     }
 
     @Override
@@ -25,7 +25,7 @@ public class HashMapProdutoRepository implements IProdutoRepository{
     }
 
     @Override
-    public void remove(Produto produto) {
-        mapa.remove(produto);
+    public void remove(int idProduto) {
+        mapa.remove(idProduto);
     }
 }

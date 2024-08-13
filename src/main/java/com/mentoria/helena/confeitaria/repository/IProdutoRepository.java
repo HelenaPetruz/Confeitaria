@@ -6,5 +6,5 @@ public interface IProdutoRepository {
     Produto get (int idProduto);
     void add (String descricao, double preco, String categoria, String validade);
     void update (Produto produto);
-    void remove (Produto produto);
+    void remove (int idProduto);
 }
