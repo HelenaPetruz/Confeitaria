@@ -18,9 +18,9 @@ public class HashMapClienteRepository implements IClienteRepository{
 
     @Override
     public Cliente add(Cliente cliente) {
-        Cliente c = new Cliente(cliente.getNome(),cliente.getIdade(),cliente.getTelefone(),cliente.getCpf());
-        mapa.put(c.getIdCliente(),c);
-        return c;
+        cliente = new Cliente(cliente);
+        mapa.put(cliente.getIdCliente(), cliente);
+        return cliente;
     }
 
     @Override
