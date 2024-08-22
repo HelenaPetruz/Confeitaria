@@ -24,7 +24,7 @@ public class HashMapClienteRepository implements IClienteRepository{
 
     @Override
     public void update(Cliente cliente) {
-        mapa.put(cliente.getIdade(), cliente);
+        mapa.put(cliente.getId(), cliente);
     }
 
     @Override
