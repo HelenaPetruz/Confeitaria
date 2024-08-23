@@ -25,6 +25,10 @@ public class Cliente extends Pessoa{
 
     }
 
+    public void incrementarId(){
+        idCliente=++id;
+    }
+
     public String exibir() {
         String retorno="";
         String titulo = "========== CLIENTE " + idCliente +" ==========<br>";
