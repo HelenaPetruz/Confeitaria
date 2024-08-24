@@ -28,19 +28,4 @@ public class Cliente extends Pessoa{
     public void incrementarId(){
         idCliente=++id;
     }
-
-    public String exibir() {
-        String retorno="";
-        String titulo = "========== CLIENTE " + idCliente +" ==========<br>";
-        retorno=retorno.concat(titulo);
-        String nomeC = "Nome: "+ nome+ "<br>";
-        retorno=retorno.concat(nomeC);
-        String idadeC = "Idade: "+idade+ "<br>";
-        retorno=retorno.concat(idadeC);
-        String telefoneC = "Telefone: "+ telefone + "<br>";
-        retorno=retorno.concat(telefoneC);
-        String cpfC = "Cpf: "+cpf + "<br>";
-        retorno=retorno.concat(cpfC);
-        return retorno;
-    }
 }

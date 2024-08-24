@@ -3,6 +3,7 @@ package com.mentoria.helena.confeitaria.repository;
 import com.mentoria.helena.confeitaria.classes.Funcionario;
 
 import java.util.HashMap;
+import java.util.List;
 
 public class HashMapFuncionarioRepository implements IFuncionarioRepository{
 
@@ -14,8 +15,7 @@ public class HashMapFuncionarioRepository implements IFuncionarioRepository{
     }
 
     @Override
-    public void add(String nome, int idade, String telefone, String cpf, double salario) {
-        Funcionario funcionario = new Funcionario(nome, idade, telefone, cpf, salario);
+    public void add(Funcionario funcionario) {
         mapa.put(funcionario.getIdFuncionario(), funcionario);
     }
 
@@ -26,7 +26,11 @@ public class HashMapFuncionarioRepository implements IFuncionarioRepository{
 
     @Override
     public void remove(Funcionario funcionario) {
-        mapa.remove(funcionario);
+        mapa.remove(funcionario.getIdFuncionario());
+    }
+
+    public List<Funcionario> getList(){
+        return mapa.values().stream().toList();
     }
 
     }

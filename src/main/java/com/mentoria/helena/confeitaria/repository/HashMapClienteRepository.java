@@ -35,7 +35,6 @@ public class HashMapClienteRepository implements IClienteRepository{
 
     @Override
     public List<Cliente> getList() {
-
         return mapa.values().stream().toList();
     }
 
