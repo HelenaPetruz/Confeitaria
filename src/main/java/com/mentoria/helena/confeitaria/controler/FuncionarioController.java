@@ -2,24 +2,31 @@ package com.mentoria.helena.confeitaria.controler;
 
 import com.mentoria.helena.confeitaria.classes.Cliente;
 import com.mentoria.helena.confeitaria.classes.Funcionario;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.mentoria.helena.confeitaria.service.FuncionarioService;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
-@RequestMapping("/funcionarios-da-confeitaria")
+@RequestMapping("/funcionarios")
 public class FuncionarioController {
 
+    private final FuncionarioService funcionarioService;
+    public FuncionarioController (FuncionarioService funcionarioService){
+        this.funcionarioService = funcionarioService;
+    }
 
+    @PostMapping
+    public ResponseEntity<Funcionario> adicionarFuncionario(@RequestBody Funcionario funcionario){
+        Funcionario f = funcionarioService.adicionarFuncionario(funcionario);
+        return ResponseEntity.ok(f);
+    }
 
     @GetMapping
-    public String exibirTodods(){
-        StringBuilder retorno = new StringBuilder("LISTA DE FUNCIONÁRIOS DA CONFEITARIA:<br><br>");
-        for (Funcionario f : listaFuncionario){
-            retorno.append(f.exibir());
-            retorno.append("<br>");
-        }
-        return retorno.toString();
+    public ResponseEntity<List<Funcionario>> exibirTodos(){
+        var lista = funcionarioService.exibirTodos();
+        return ResponseEntity.ok(lista);
     }
 
 }
