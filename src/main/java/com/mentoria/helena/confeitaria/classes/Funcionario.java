@@ -5,10 +5,6 @@ public class Funcionario extends Pessoa {
     protected double salario;
     protected static int id=0;
     protected int idFuncionario;
-    public Funcionario() {
-        id++;
-        this.idFuncionario = id;
-    }
 
     public String exibir() {
         String retorno="";
@@ -59,6 +55,10 @@ public class Funcionario extends Pessoa {
 
     public void setIdFuncionario(int idFuncionario) {
         this.idFuncionario = idFuncionario;
+    }
+
+    public void incrementarId(){
+        idFuncionario=++id;
     }
 
 }
