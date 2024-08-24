@@ -15,8 +15,9 @@ public class HashMapFuncionarioRepository implements IFuncionarioRepository{
     }
 
     @Override
-    public void add(Funcionario funcionario) {
+    public Funcionario add(Funcionario funcionario) {
         mapa.put(funcionario.getIdFuncionario(), funcionario);
+        return funcionario;
     }
 
     @Override
