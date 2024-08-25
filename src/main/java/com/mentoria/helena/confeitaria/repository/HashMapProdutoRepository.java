@@ -15,9 +15,10 @@ public class HashMapProdutoRepository implements IProdutoRepository{
     }
 
     @Override
-    public void add(Produto produto) {
+    public Produto add(Produto produto) {
         produto.incrementarId();
         mapa.put(produto.getIdProduto(), produto);
+        return produto;
     }
 
     @Override
