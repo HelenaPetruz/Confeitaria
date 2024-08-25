@@ -9,46 +9,8 @@ public class Produto {
     protected String categoria;
     protected String validade;
 
-
-
-    public void cadastrarProduto (){
-        //tratamento de exeção para validar campos.
-    }
-
-    public void removerProduto (){
-    }
-
-    public int getIdProduto() {
-        return idProduto;
-    }
-
-    public void setIdProduto(int idProduto) {
-        this.idProduto = idProduto;
-    }
-
-    public String exibir() {
-        String retorno="";
-        String titulo = "========== PRODUTO " + getIdProduto() +" ==========<br>";
-        retorno=retorno.concat(titulo);
-        String descricaoC = "Descrição: "+ getDescricao()+ "<br>";
-        retorno=retorno.concat(descricaoC);
-        String precoC = "Preço: "+getPreco()+ "<br>";
-        retorno=retorno.concat(precoC);
-        String categoriaC = "Categoria: "+ getCategoria() + "<br>";
-        retorno=retorno.concat(categoriaC);
-        String validadeC = "Validade: "+getValidade() + "<br>";
-        retorno=retorno.concat(validadeC);
-        return retorno;
-    }
-
-    public Produto() {
-        id++;
-        idProduto = id;
-    }
-
     public Produto(String descricao, double preco, String categoria, String validade) {
         this.descricao = descricao;
-        id++;
         if (preco<0){
             throw new PrecoNegativoException();
         }
@@ -57,7 +19,14 @@ public class Produto {
         }
         this.categoria = categoria;
         this.validade = validade;
-        this.idProduto = id;
+    }
+
+    public int getIdProduto() {
+        return idProduto;
+    }
+
+    public void setIdProduto(int idProduto) {
+        this.idProduto = idProduto;
     }
 
     public String getDescricao() {
@@ -103,5 +72,9 @@ public class Produto {
 
     public void setValidade(String validade) {
         this.validade = validade;
+    }
+
+    public void incrementarId() {
+        idProduto = ++id;
     }
 }

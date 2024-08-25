@@ -1,6 +1,5 @@
 package com.mentoria.helena.confeitaria.controler;
 
-import com.mentoria.helena.confeitaria.classes.Cliente;
 import com.mentoria.helena.confeitaria.classes.Funcionario;
 import com.mentoria.helena.confeitaria.service.FuncionarioService;
 import org.springframework.http.ResponseEntity;
