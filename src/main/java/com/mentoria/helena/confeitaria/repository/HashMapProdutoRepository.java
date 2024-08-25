@@ -3,6 +3,7 @@ package com.mentoria.helena.confeitaria.repository;
 import com.mentoria.helena.confeitaria.classes.Produto;
 
 import java.util.HashMap;
+import java.util.List;
 
 public class HashMapProdutoRepository implements IProdutoRepository{
 
@@ -14,8 +15,8 @@ public class HashMapProdutoRepository implements IProdutoRepository{
     }
 
     @Override
-    public void add(String descricao, double preco, String categoria, String validade) {
-        Produto produto = new Produto(descricao, preco, categoria, validade);
+    public void add(Produto produto) {
+        produto.incrementarId();
         mapa.put(produto.getIdProduto(), produto);
     }
 
@@ -25,7 +26,11 @@ public class HashMapProdutoRepository implements IProdutoRepository{
     }
 
     @Override
-    public void remove(int idProduto) {
-        mapa.remove(idProduto);
+    public void remove(Produto produto) {
+        mapa.remove(produto.getIdProduto());
+    }
+
+    public List<Produto> getList(){
+        return mapa.values().stream().toList();
     }
 }
