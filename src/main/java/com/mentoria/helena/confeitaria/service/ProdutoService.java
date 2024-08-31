@@ -2,9 +2,10 @@ package com.mentoria.helena.confeitaria.service;
 
 import com.mentoria.helena.confeitaria.classes.Produto;
 import com.mentoria.helena.confeitaria.repository.HashMapProdutoRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class ProdutoService {
 
     private final HashMapProdutoRepository produtoRepository;

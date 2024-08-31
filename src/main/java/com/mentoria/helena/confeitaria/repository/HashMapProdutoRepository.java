@@ -1,10 +1,11 @@
 package com.mentoria.helena.confeitaria.repository;
 
 import com.mentoria.helena.confeitaria.classes.Produto;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.List;
-
+@Repository
 public class HashMapProdutoRepository implements IProdutoRepository{
 
     HashMap <Integer, Produto> mapa = new HashMap<>();

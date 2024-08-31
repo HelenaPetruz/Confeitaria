@@ -1,10 +1,11 @@
 package com.mentoria.helena.confeitaria.repository;
 
 import com.mentoria.helena.confeitaria.classes.Funcionario;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.List;
-
+@Repository
 public class HashMapFuncionarioRepository implements IFuncionarioRepository{
 
     HashMap <Integer, Funcionario> mapa = new HashMap<>();
