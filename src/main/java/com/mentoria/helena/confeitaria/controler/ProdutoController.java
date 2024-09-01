@@ -1,10 +1,7 @@
 package com.mentoria.helena.confeitaria.controler;
 import com.mentoria.helena.confeitaria.classes.Produto;
 import com.mentoria.helena.confeitaria.service.ProdutoService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +16,7 @@ public class ProdutoController {
     }
 
     @PostMapping
-    public Produto adicionarProduto(Produto produto){
+    public Produto adicionarProduto(@RequestBody Produto produto){
         return produtoService.adicionarProduto(produto);
     }
 
