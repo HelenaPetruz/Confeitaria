@@ -37,12 +37,12 @@ public class Produto {
         this.descricao = descricao;
     }
 
-    public int getId() {
+    public static int getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public static void setId(int id) {
+        Produto.id = id;
     }
 
     public double getPreco() {

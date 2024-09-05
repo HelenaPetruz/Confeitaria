@@ -8,7 +8,8 @@ import java.util.List;
 @Repository
 public class HashMapProdutoRepository implements IProdutoRepository{
 
-    HashMap <Integer, Produto> mapa = new HashMap<>();
+    HashMap <Integer, Produto>
+            mapa = new HashMap<>();
 
     @Override
     public Produto get(int idProduto) {
