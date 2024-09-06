@@ -1,5 +1,6 @@
 package com.mentoria.helena.confeitaria.controler;
 import com.mentoria.helena.confeitaria.classes.Cliente;
+import com.mentoria.helena.confeitaria.classes.PrecoNegativoException;
 import com.mentoria.helena.confeitaria.classes.Produto;
 import com.mentoria.helena.confeitaria.service.ProdutoService;
 import org.springframework.http.ResponseEntity;
@@ -19,8 +20,8 @@ public class ProdutoController {
 
     @PostMapping
     public ResponseEntity<Produto> adicionarProduto(@RequestBody Produto produto){
-        Produto p = produtoService.adicionarProduto(produto);
-        return ResponseEntity.ok(p);
+            Produto p = produtoService.adicionarProduto(produto);
+            return ResponseEntity.ok(p);
     }
 
     @GetMapping

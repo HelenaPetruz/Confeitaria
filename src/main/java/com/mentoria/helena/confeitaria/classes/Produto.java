@@ -11,12 +11,7 @@ public class Produto {
 
     public Produto(String descricao, double preco, String categoria, String validade) {
         this.descricao = descricao;
-        if (preco<0){
-            throw new PrecoNegativoException();
-        }
-        else {
-            this.preco = preco;
-        }
+        this.preco = preco;
         this.categoria = categoria;
         this.validade = validade;
     }

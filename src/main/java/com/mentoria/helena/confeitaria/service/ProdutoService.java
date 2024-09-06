@@ -1,5 +1,6 @@
 package com.mentoria.helena.confeitaria.service;
 
+import com.mentoria.helena.confeitaria.classes.PrecoNegativoException;
 import com.mentoria.helena.confeitaria.classes.Produto;
 import com.mentoria.helena.confeitaria.repository.HashMapProdutoRepository;
 import org.springframework.stereotype.Service;
@@ -13,7 +14,10 @@ public class ProdutoService {
         this.produtoRepository = produtoRepository;
     }
 
-    public Produto adicionarProduto (Produto produto){
+    public Produto adicionarProduto (Produto produto) throws PrecoNegativoException{
+            if (produto.getPreco()<0){
+                throw new PrecoNegativoException();
+            }
         return produtoRepository.add(produto);
     }
 
