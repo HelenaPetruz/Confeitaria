@@ -5,6 +5,7 @@ import com.mentoria.helena.confeitaria.repository.HashMapClienteRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Objects;
 
 @Service
 public class ClienteService {
@@ -34,5 +35,18 @@ public class ClienteService {
             }
         }
         return cliente;
+    }
+
+    public Cliente alterarCliente(Cliente cliente){
+        var lista = clienteRepository.getList();
+        for (Cliente c: lista){
+            if(c.getIdCliente() == cliente.getIdCliente()){
+                if (!Objects.equals(cliente.getNome(), c.getNome())){
+                    c.getNome() = cliente.getNome();
+                }
+
+            }
+        }
+
     }
 }
