@@ -12,11 +12,11 @@ import java.util.List;
 @RequestMapping("/clientes")
 public class ClienteController {
 
-            private final ClienteService clienteService;
+    private final ClienteService clienteService;
 
-            public ClienteController(ClienteService clienteService){
-                this.clienteService = clienteService;
-            }
+    public ClienteController(ClienteService clienteService){
+        this.clienteService = clienteService;
+    }
 
     @GetMapping
     public ResponseEntity<List<Cliente>> exibirTodods(){
@@ -33,6 +33,16 @@ public class ClienteController {
     public ResponseEntity<Cliente> adicionarCliente (@RequestBody Cliente cliente){
         Cliente clienteLegal = clienteService.adicionarCliente(cliente);
         return ResponseEntity.ok(clienteLegal);
+    }
+
+    @PutMapping
+    public void alterarCliente (@RequestBody Cliente cliente){
+        clienteService.alterarCliente(cliente);
+    }
+
+    @DeleteMapping
+    public void removerCliente (@RequestBody Cliente cliente){
+        clienteService.removerCliente(cliente);
     }
 
 }
