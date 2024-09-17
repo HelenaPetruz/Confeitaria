@@ -8,7 +8,7 @@ public interface IClienteRepository {
     Cliente get (int idCliente);
     Cliente add (Cliente cliente);
     void update (Cliente cliente);
-    void remove (Cliente cliente);
+    void remove (int idCliente);
     List<Cliente> getList ();
 
 }

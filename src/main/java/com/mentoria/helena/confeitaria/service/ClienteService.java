@@ -37,8 +37,8 @@ public class ClienteService {
         return cliente;
     }
 
-    public void removerCliente (Cliente cliente){
-        clienteRepository.remove(cliente);
+    public void removerCliente (int idCliente){
+        clienteRepository.remove(idCliente);
     }
 
     public void alterarCliente(Cliente cliente){

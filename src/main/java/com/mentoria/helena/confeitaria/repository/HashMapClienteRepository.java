@@ -29,8 +29,8 @@ public class HashMapClienteRepository implements IClienteRepository{
     }
 
     @Override
-    public void remove(Cliente cliente) {
-        mapa.remove(cliente.getIdCliente());
+    public void remove(int idCliente) {
+        mapa.remove(idCliente);
     }
 
     @Override

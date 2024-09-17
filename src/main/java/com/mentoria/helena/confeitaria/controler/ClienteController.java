@@ -41,8 +41,8 @@ public class ClienteController {
     }
 
     @DeleteMapping
-    public void removerCliente (@RequestBody Cliente cliente){
-        clienteService.removerCliente(cliente);
+    public void removerCliente (@RequestBody int idCliente){
+        clienteService.removerCliente(idCliente);
     }
 
 }
