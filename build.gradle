@@ -2,6 +2,7 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.3.0'
 	id 'io.spring.dependency-management' version '1.1.5'
+	id 'idea'
 }
 
 group = 'com.mentoria.helena'
@@ -21,11 +22,29 @@ dependencies {
 	//implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-configuration-processor'
+	// lib para ajudar a fazer as coisas triviais mais facilmente
+
 	//runtimeOnly 'com.mysql:mysql-connector-j'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
 }
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+
+
+idea {
+	module {
+		// isso aqui faz o intellij baixar sozinho o javadoc das libs e o codigo fonte
+		downloadJavadoc = true
+		downloadSources = true
+	}
 }
