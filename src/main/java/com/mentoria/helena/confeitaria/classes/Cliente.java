@@ -1,6 +1,11 @@
 package com.mentoria.helena.confeitaria.classes;
 
-public class Cliente extends Pessoa{
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+
+public class Cliente extends Pessoa {
+    @JsonIgnore
     protected static int id=0;
     protected int idCliente;
 
@@ -20,8 +25,13 @@ public class Cliente extends Pessoa{
         this.idCliente = idCliente;
     }
 
+    @JsonCreator
     public Cliente(String nome, int idade, String telefone, String cpf) {
         super(nome, idade, telefone, cpf);
+
+    }
+
+    public Cliente() {
 
     }
 

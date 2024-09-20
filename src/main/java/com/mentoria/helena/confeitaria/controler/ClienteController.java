@@ -1,11 +1,12 @@
 package com.mentoria.helena.confeitaria.controler;
 import com.mentoria.helena.confeitaria.classes.Cliente;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.mentoria.helena.confeitaria.controler.dto.ClienteDto;
 import com.mentoria.helena.confeitaria.service.ClienteService;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -30,7 +31,9 @@ public class ClienteController {
     }
 
     @PostMapping
-    public ResponseEntity<Cliente> adicionarCliente (@RequestBody Cliente cliente){
+    public ResponseEntity<Cliente> adicionarCliente (@RequestBody ClienteDto clienteDto){
+        final var cliente = new Cliente(clienteDto.getNome(), clienteDto.getIdade(), clienteDto.getTelefone(), clienteDto.getCpf());
+        clienteDto.getCpf();
         Cliente clienteLegal = clienteService.adicionarCliente(cliente);
         return ResponseEntity.ok(clienteLegal);
     }
@@ -40,8 +43,8 @@ public class ClienteController {
         clienteService.alterarCliente(cliente);
     }
 
-    @DeleteMapping
-    public void removerCliente (@RequestBody int idCliente){
+    @DeleteMapping("/{idCliente}")
+    public void removerCliente (@PathVariable("idCliente") int idCliente){
         clienteService.removerCliente(idCliente);
     }
 
