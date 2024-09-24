@@ -6,5 +6,5 @@ public interface IProdutoRepository {
     Produto get (int idProduto);
     Produto add (Produto produto);
     void update (Produto produto);
-    void remove (Produto produto);
+    void remove (int idProduto);
 }
