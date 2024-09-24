@@ -29,8 +29,8 @@ public class HashMapProdutoRepository implements IProdutoRepository{
     }
 
     @Override
-    public void remove(Produto produto) {
-        mapa.remove(produto.getIdProduto());
+    public void remove(int idProduto) {
+        mapa.remove(idProduto);
     }
 
     public List<Produto> getList(){
