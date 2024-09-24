@@ -1,13 +1,15 @@
 package com.mentoria.helena.confeitaria.controler.dto;
+
 import lombok.Getter;
 import lombok.Value;
 
-@Value
 @Getter
-public class ClienteDto {
-    int idCliente;
+@Value
+public class FuncionarioDto {
+    int idFuncionario;
     String nome;
     int idade;
     String telefone;
     String cpf;
+    double salario;
 }
