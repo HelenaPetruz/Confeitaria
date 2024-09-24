@@ -28,8 +28,8 @@ public class HashMapFuncionarioRepository implements IFuncionarioRepository{
     }
 
     @Override
-    public void remove(Funcionario funcionario) {
-        mapa.remove(funcionario.getIdFuncionario());
+    public void remove(int idFuncionario) {
+        mapa.remove(idFuncionario);
     }
 
     public List<Funcionario> getList(){

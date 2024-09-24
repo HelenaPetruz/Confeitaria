@@ -7,6 +7,6 @@ public interface IFuncionarioRepository {
     Funcionario get (int idFuncionario);
     Funcionario add (Funcionario funcionario);
     void update (Funcionario funcionario);
-    void remove (Funcionario funcionario);
+    void remove (int idFuncionario);
 
 }

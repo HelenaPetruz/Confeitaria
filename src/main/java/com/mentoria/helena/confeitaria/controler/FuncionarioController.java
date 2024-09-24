@@ -28,4 +28,9 @@ public class FuncionarioController {
         return ResponseEntity.ok(lista);
     }
 
+    @DeleteMapping("/{idFuncionario}")
+    public void removerFuncionario(@PathVariable("idFuncionario") int idFuncionario){
+        funcionarioService.removerFuncionario(idFuncionario);
+    }
+
 }
