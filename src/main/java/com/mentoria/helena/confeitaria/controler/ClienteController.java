@@ -47,4 +47,6 @@ public class ClienteController {
     public void removerCliente (@PathVariable("idCliente") int idCliente){
         clienteService.removerCliente(idCliente);
     }
+
+
 }

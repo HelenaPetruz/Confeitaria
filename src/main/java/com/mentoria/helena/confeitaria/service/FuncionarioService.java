@@ -25,4 +25,8 @@ public class FuncionarioService {
     public void removerFuncionario(int idFuncionario){
         funcionarioRepository.remove(idFuncionario);
     }
+
+    public void alterarFuncionario (Funcionario funcionario){
+        funcionarioRepository.update(funcionario);
+    }
 }

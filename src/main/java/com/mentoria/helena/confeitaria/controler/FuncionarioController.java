@@ -33,4 +33,9 @@ public class FuncionarioController {
         funcionarioService.removerFuncionario(idFuncionario);
     }
 
+    @PutMapping
+    public void alterarFuncionario(@RequestBody Funcionario funcionario){
+        funcionarioService.alterarFuncionario(funcionario);
+    }
+
 }

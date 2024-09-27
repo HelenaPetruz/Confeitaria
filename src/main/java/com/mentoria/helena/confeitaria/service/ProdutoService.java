@@ -29,4 +29,8 @@ public class ProdutoService {
         produtoRepository.remove(idProduto);
     }
 
+    public void alterarProduto (Produto produto){
+        produtoRepository.update(produto);
+    }
+
 }

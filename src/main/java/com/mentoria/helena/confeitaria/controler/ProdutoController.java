@@ -35,4 +35,8 @@ public class ProdutoController {
         produtoService.removerProduto(idProduto);
     }
 
+    @PutMapping
+    public void alterarProduto(@RequestBody Produto produto){
+        produtoService.alterarProduto(produto);
+    }
 }
