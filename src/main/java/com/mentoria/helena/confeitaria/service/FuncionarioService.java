@@ -2,6 +2,7 @@ package com.mentoria.helena.confeitaria.service;
 
 import com.mentoria.helena.confeitaria.classes.Funcionario;
 import com.mentoria.helena.confeitaria.repository.HashMapFuncionarioRepository;
+import com.mentoria.helena.confeitaria.repository.IFuncionarioRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -9,8 +10,8 @@ import java.util.List;
 @Service
 public class FuncionarioService {
 
-    private final HashMapFuncionarioRepository funcionarioRepository;
-    public FuncionarioService(HashMapFuncionarioRepository funcionarioRepository){
+    private final IFuncionarioRepository funcionarioRepository;
+    public FuncionarioService(IFuncionarioRepository funcionarioRepository){
         this.funcionarioRepository = funcionarioRepository;
     }
 
