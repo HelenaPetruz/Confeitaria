@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="34a4496f-29fc-4088-a862-e570c3592997" name="Changes" comment="delete pelo id">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Confeitaria" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Confeitaria" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Confeitaria" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="gerar-id" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;HelenaPetruz&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HelenaPetruz/Confeitaria.git&quot;,
+    &quot;accountId&quot;: &quot;6ac24fd8-4886-443e-8c12-78cc8732d3fc&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2hkZcQqpBTPQZUvMPNZE2Wnvdib" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Projeto [:ConfeitariaApplication.main()].executor": "Run",
+    "Gradle.Projeto.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Merging estudo-do-padrao-repository",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Alessandra/OneDrive - Universidade Estadual de Campinas/Minhas coisas/Escola de inverno em programacao web/Tarefa_condicionais_e_logica_booleana",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "inlay.hints"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aless\OneDrive\Helena - mentoria java\Projeto\src\main\java\com\mentoria\helena\confeitaria\classes" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ConfeitariaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mentoria.helena.confeitaria.ConfeitariaApplication" />
+      <module name="Confeitaria.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mentoria.helena.confeitaria.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ConfeitariaApplication" />
+        <item itemvalue="Application.ConfeitariaApplication" />
+        <item itemvalue="Application.ConfeitariaApplication" />
+        <item itemvalue="Application.ConfeitariaApplication" />
+        <item itemvalue="Application.ConfeitariaApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\aless\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34a4496f-29fc-4088-a862-e570c3592997" name="Changes" comment="" />
+      <created>1718140115213</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718140115213</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Hello world - aprendi sobre anotações">
+      <option name="closed" value="true" />
+      <created>1719529363905</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719529363905</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ClienteController - exibição da lista de clientes">
+      <option name="closed" value="true" />
+      <created>1719604483016</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719604483016</updated>
+    </task>
+    <task id="LOCAL-00006" summary="FuncionarioController - exibição da lista de funcionarios">
+      <option name="closed" value="true" />
+      <created>1719830614877</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719830614877</updated>
+    </task>
+    <task id="LOCAL-00007" summary="FuncionarioController - exibição da lista de funcionarios">
+      <option name="closed" value="true" />
+      <created>1719830813984</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719830813984</updated>
+    </task>
+    <task id="LOCAL-00008" summary="FuncionarioController - exibição da lista de funcionarios">
+      <option name="closed" value="true" />
+      <created>1719831974700</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719831974700</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ProdutoController - exibição da lista de produtos">
+      <option name="closed" value="true" />
+      <created>1719832789385</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719832789385</updated>
+    </task>
+    <task id="LOCAL-00010" summary="/hello">
+      <option name="closed" value="true" />
+      <created>1720555062754</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720555062754</updated>
+    </task>
+    <task id="LOCAL-00011" summary="/oi">
+      <option name="closed" value="true" />
+      <created>1720555461609</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720555461609</updated>
+    </task>
+    <task id="LOCAL-00012" summary="interface IClienteRepository">
+      <option name="closed" value="true" />
+      <created>1721407702316</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721407702316</updated>
+    </task>
+    <task id="LOCAL-00013" summary="interface IClienteRepository">
+      <option name="closed" value="true" />
+      <created>1721407732748</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721407732748</updated>
+    </task>
+    <task id="LOCAL-00014" summary="metodo get do ClienteRepository">
+      <option name="closed" value="true" />
+      <created>1721408250505</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1721408250505</updated>
+    </task>
+    <task id="LOCAL-00015" summary="metodo add do ClienteRepository">
+      <option name="closed" value="true" />
+      <created>1721408875887</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1721408875887</updated>
+    </task>
+    <task id="LOCAL-00016" summary="metodo remove do ClienteRepository">
+      <option name="closed" value="true" />
+      <created>1721409058248</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1721409058248</updated>
+    </task>
+    <task id="LOCAL-00017" summary="metodo dataHora">
+      <option name="closed" value="true" />
+      <created>1721736088989</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1721736088989</updated>
+    </task>
+    <task id="LOCAL-00018" summary="metodo dataHoraAtual chamado no HelloWorldControler">
+      <option name="closed" value="true" />
+      <created>1721737692308</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1721737692308</updated>
+    </task>
+    <task id="LOCAL-00019" summary="metodos basicos em FuncionarioRepository">
+      <option name="closed" value="true" />
+      <created>1721738711811</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1721738711811</updated>
+    </task>
+    <task id="LOCAL-00020" summary="metodos basicos em FuncionarioRepository">
+      <option name="closed" value="true" />
+      <created>1721738759765</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1721738759765</updated>
+    </task>
+    <task id="LOCAL-00021" summary="arrumei o gitignore">
+      <option name="closed" value="true" />
+      <created>1721763989495</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1721763989495</updated>
+    </task>
+    <task id="LOCAL-00022" summary="atualização do repositorio com hashmap">
+      <option name="closed" value="true" />
+      <created>1721767602030</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1721767602030</updated>
+    </task>
+    <task id="LOCAL-00023" summary="atualização do repositorio do funcionario com hashmap">
+      <option name="closed" value="true" />
+      <created>1721911034418</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1721911034418</updated>
+    </task>
+    <task id="LOCAL-00024" summary="repositorio produto">
+      <option name="closed" value="true" />
+      <created>1721911890831</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1721911890831</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Atualizaçãoes (service, repository, controller)">
+      <option name="closed" value="true" />
+      <created>1723242348418</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1723242348418</updated>
+    </task>
+    <task id="LOCAL-00026" summary="arrumei o método de cliente mais velho">
+      <option name="closed" value="true" />
+      <created>1723450949943</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1723450949943</updated>
+    </task>
+    <task id="LOCAL-00027" summary="dependencia &quot;injetada&quot; por construtor em ClienteService">
+      <option name="closed" value="true" />
+      <created>1723506191859</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1723506191859</updated>
+    </task>
+    <task id="LOCAL-00028" summary="arrumei o nome do repository e da variável utilizada no método add">
+      <option name="closed" value="true" />
+      <created>1723507046851</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1723507046851</updated>
+    </task>
+    <task id="LOCAL-00029" summary="arrumei o metodo adicionar cliente e o add para aceitar um objeto do tipo Cliente">
+      <option name="closed" value="true" />
+      <created>1723508417340</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1723508417340</updated>
+    </task>
+    <task id="LOCAL-00030" summary="arrumei nome do mapa e a classe Repository de Produto">
+      <option name="closed" value="true" />
+      <created>1723535570955</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1723535570955</updated>
+    </task>
+    <task id="LOCAL-00031" summary="arrumei o remove do repository de Produto e o id dele">
+      <option name="closed" value="true" />
+      <created>1723536046510</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1723536046510</updated>
+    </task>
+    <task id="LOCAL-00032" summary="arrumei o metodo adicionar do repositorio do cliente">
+      <option name="closed" value="true" />
+      <created>1724370333732</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1724370333732</updated>
+    </task>
+    <task id="LOCAL-00033" summary="arrumei o metodo adicionar do repositorio do cliente">
+      <option name="closed" value="true" />
+      <created>1724370749504</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1724370749504</updated>
+    </task>
+    <task id="LOCAL-00034" summary="arrumei o metodo update do repositorio do cliente">
+      <option name="closed" value="true" />
+      <created>1724370840351</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1724370840351</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Ajustes no repositorio do funcionario">
+      <option name="closed" value="true" />
+      <created>1724371089019</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1724371089019</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Ajustes no repositorio do funcionario">
+      <option name="closed" value="true" />
+      <created>1724371376736</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1724371376736</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Arrumei id do cliente">
+      <option name="closed" value="true" />
+      <created>1724443880207</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1724443880208</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Repositorio do funcionario">
+      <option name="closed" value="true" />
+      <created>1724521402850</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1724521402850</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Repositorio do funcionario">
+      <option name="closed" value="true" />
+      <created>1724521417088</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1724521417088</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Service do funcionario">
+      <option name="closed" value="true" />
+      <created>1724524137043</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1724524137043</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Controller do funcionario">
+      <option name="closed" value="true" />
+      <created>1724525895840</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1724525895840</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Produto">
+      <option name="closed" value="true" />
+      <created>1724593990701</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1724593990701</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Repositorio do produto">
+      <option name="closed" value="true" />
+      <created>1724594324137</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1724594324137</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Service do produto">
+      <option name="closed" value="true" />
+      <created>1724594769997</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1724594769997</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Controller do produto">
+      <option name="closed" value="true" />
+      <created>1724595187890</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1724595187890</updated>
+    </task>
+    <task id="LOCAL-00046" summary="ajustes">
+      <option name="closed" value="true" />
+      <created>1725066822515</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1725066822515</updated>
+    </task>
+    <task id="LOCAL-00047" summary="coloquei a anotacao faltando em produtoController">
+      <option name="closed" value="true" />
+      <created>1725203066170</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1725203066170</updated>
+    </task>
+    <task id="LOCAL-00048" summary="arrumei o produto para nao exibir id (contador)">
+      <option name="closed" value="true" />
+      <created>1725579870832</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1725579870832</updated>
+    </task>
+    <task id="LOCAL-00049" summary="mentoria exceptions">
+      <option name="closed" value="true" />
+      <created>1725666420131</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1725666420131</updated>
+    </task>
+    <task id="LOCAL-00050" summary="comecei update cliente (service)">
+      <option name="closed" value="true" />
+      <created>1726445597557</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1726445597557</updated>
+    </task>
+    <task id="LOCAL-00051" summary="tentativa do alterar e remover do cliente">
+      <option name="closed" value="true" />
+      <created>1726601046654</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1726601046654</updated>
+    </task>
+    <task id="LOCAL-00052" summary="delete pelo id">
+      <option name="closed" value="true" />
+      <created>1726603031729</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1726603031729</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CODE_SMELLS_PROFILE" value="Default" />
+    <MESSAGE value="Atualizaçãoes (service, repository, controller)" />
+    <MESSAGE value="arrumei o método de cliente mais velho" />
+    <MESSAGE value="dependencia &quot;injetada&quot; por construtor em ClienteService" />
+    <MESSAGE value="arrumei o nome do repository e da variável utilizada no método add" />
+    <MESSAGE value="arrumei o metodo adicionar cliente e o add para aceitar um objeto do tipo Cliente" />
+    <MESSAGE value="arrumei nome do mapa e a classe Repository de Produto" />
+    <MESSAGE value="arrumei o remove do repository de Produto e o id dele" />
+    <MESSAGE value="arrumei o metodo adicionar do repositorio do cliente" />
+    <MESSAGE value="arrumei o metodo update do repositorio do cliente" />
+    <MESSAGE value="Ajustes no repositorio do funcionario" />
+    <MESSAGE value="Arrumei id do cliente" />
+    <MESSAGE value="Repositorio do funcionario" />
+    <MESSAGE value="Service do funcionario" />
+    <MESSAGE value="Controller do funcionario" />
+    <MESSAGE value="Produto" />
+    <MESSAGE value="Repositorio do produto" />
+    <MESSAGE value="Service do produto" />
+    <MESSAGE value="Controller do produto" />
+    <MESSAGE value="ajustes" />
+    <MESSAGE value="coloquei a anotacao faltando em produtoController" />
+    <MESSAGE value="arrumei o produto para nao exibir id (contador)" />
+    <MESSAGE value="mentoria exceptions" />
+    <MESSAGE value="comecei update cliente (service)" />
+    <MESSAGE value="tentativa do alterar e remover do cliente" />
+    <MESSAGE value="delete pelo id" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete pelo id" />
+  </component>
+</project>
