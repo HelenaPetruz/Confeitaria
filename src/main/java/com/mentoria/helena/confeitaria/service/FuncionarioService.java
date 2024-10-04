@@ -22,4 +22,11 @@ public class FuncionarioService {
         return funcionarioRepository.getList();
     }
 
+    public void removerFuncionario(int idFuncionario){
+        funcionarioRepository.remove(idFuncionario);
+    }
+
+    public void alterarFuncionario (Funcionario funcionario){
+        funcionarioRepository.update(funcionario);
+    }
 }

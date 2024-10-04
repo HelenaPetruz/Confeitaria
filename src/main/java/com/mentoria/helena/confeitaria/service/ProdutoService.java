@@ -25,4 +25,12 @@ public class ProdutoService {
         return produtoRepository.getList();
     }
 
+    public void removerProduto (int idProduto){
+        produtoRepository.remove(idProduto);
+    }
+
+    public void alterarProduto (Produto produto){
+        produtoRepository.update(produto);
+    }
+
 }
