@@ -50,4 +50,18 @@ public class ClienteServiceTeste {
         Assertions.assertEquals(snapeSalvo, clienteMaisVelho);
     }
 
+    @Test
+    public void alterarClientePorId(){
+        //Como testar métodos que são void??
+
+        //3A: arrange(ajeitar), criar os dados do teste
+        Cliente katniss = new Cliente("Katniss", 18, "999999", "999999");
+
+        //Act(agir), chama a classe que vai testar
+        //Cliente katnissNova = clienteService.alterarCliente(katniss);
+
+        //Assert(verificar), verifica resultado da ação
+        //Assertions.assertEquals(, katnissNova);
+    }
+
 }

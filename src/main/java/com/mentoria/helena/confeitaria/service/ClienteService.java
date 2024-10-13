@@ -43,24 +43,6 @@ public class ClienteService {
     }
 
     public void alterarCliente(Cliente cliente){
-        /*var lista = clienteRepository.getList();
-        for (Cliente c: lista){
-            if(c.getIdCliente() == cliente.getIdCliente()){
-                if (!Objects.equals(cliente.getNome(), c.getNome())){
-                    c.setNome(cliente.getNome());
-                }
-                if (cliente.getIdade() != c.getIdade()){
-                    c.setIdade(cliente.getIdade());
-                }
-                if (!Objects.equals(cliente.getCpf(), c.getCpf())) {
-                    c.setCpf(cliente.getCpf());
-                }
-                if (!Objects.equals(cliente.getTelefone(), c.getTelefone())){
-                    c.setTelefone(clienteMaisVelho().getTelefone());
-                }
-                cliente=c;
-            }
-        }*/
         clienteRepository.update(cliente);
     }
 }

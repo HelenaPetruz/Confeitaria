@@ -35,15 +35,19 @@ public class ClienteController {
         return ResponseEntity.ok(clienteLegal);
     }
 
+    @DeleteMapping("/{idCliente}")
+    public void removerCliente (@PathVariable("idCliente") int idCliente){
+        clienteService.removerCliente(idCliente);
+    }
+
     @PutMapping
     public void alterarCliente (@RequestBody Cliente cliente){
         clienteService.alterarCliente(cliente);
     }
 
-    @DeleteMapping
-    public void removerCliente (@RequestBody int idCliente){
-        clienteService.removerCliente(idCliente);
+    @PutMapping("/idCliente")
+    public void alterarClientePorId (@PathVariable("idCliente") int idCliente, @RequestBody Cliente cliente){
+        clienteService.alterarCliente(cliente);
     }
-
 
 }
