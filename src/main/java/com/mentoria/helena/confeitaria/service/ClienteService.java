@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 @Service
 public class ClienteService {
@@ -44,5 +45,9 @@ public class ClienteService {
 
     public void alterarCliente(Cliente cliente){
         clienteRepository.update(cliente);
+    }
+
+    public Optional<Cliente> buscarPorId(int idCliente){
+        return Optional.ofNullable(clienteRepository.get(idCliente));
     }
 }

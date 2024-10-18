@@ -8,6 +8,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 public class ProdutoServiceTeste {
 
     ProdutoService produtoService;
@@ -30,7 +32,4 @@ public class ProdutoServiceTeste {
         //Assert(verificar), verifica resultado da ação
         Assertions.assertEquals(1, p.getIdProduto());
     }
-
-
-
 }

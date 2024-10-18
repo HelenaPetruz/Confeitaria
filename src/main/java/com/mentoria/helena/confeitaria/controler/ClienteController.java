@@ -7,6 +7,7 @@ import com.mentoria.helena.confeitaria.service.ClienteService;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/clientes")
@@ -45,9 +46,15 @@ public class ClienteController {
         clienteService.alterarCliente(cliente);
     }
 
-    @PutMapping("/idCliente")
-    public void alterarClientePorId (@PathVariable("idCliente") int idCliente, @RequestBody Cliente cliente){
+    @PutMapping("/{idCliente}")
+    public ResponseEntity<Void> alterarClientePorId (@PathVariable("idCliente") int idCliente, @RequestBody Cliente cliente){
+        Optional<Cliente> possivelCliente = clienteService.buscarPorId(idCliente);
+        if (possivelCliente.isEmpty()){
+            return ResponseEntity.badRequest().build();
+        }
+        cliente.setIdCliente(idCliente);
         clienteService.alterarCliente(cliente);
+        return ResponseEntity.noContent().build();
     }
 
 }

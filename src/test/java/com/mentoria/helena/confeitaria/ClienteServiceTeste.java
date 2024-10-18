@@ -9,6 +9,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Optional;
+
 public class ClienteServiceTeste {
 
     ClienteService clienteService;
@@ -55,13 +57,21 @@ public class ClienteServiceTeste {
         //Como testar métodos que são void??
 
         //3A: arrange(ajeitar), criar os dados do teste
-        Cliente katniss = new Cliente("Katniss", 18, "999999", "999999");
+        final Cliente katniss = new Cliente("Katniss", 18, "999999", "999999");
+        clienteService.adicionarCliente(katniss);
+        katniss.setIdade(19);
 
         //Act(agir), chama a classe que vai testar
-        //Cliente katnissNova = clienteService.alterarCliente(katniss);
+        clienteService.alterarCliente(katniss);
 
         //Assert(verificar), verifica resultado da ação
-        //Assertions.assertEquals(, katnissNova);
+        Optional<Cliente> katinissAtualizada = clienteService.buscarPorId(katniss.getIdCliente());
+        Assertions.assertTrue(katinissAtualizada.isPresent());
+        Assertions.assertEquals(19,katinissAtualizada.get().getIdade());
+
+        /*cadastrar Cliente,
+        atualizar Cliente,
+        verificar o cadastro*/
     }
 
 }
