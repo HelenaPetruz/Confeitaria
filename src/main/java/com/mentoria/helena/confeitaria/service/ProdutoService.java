@@ -7,6 +7,8 @@ import com.mentoria.helena.confeitaria.repository.IProdutoRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 @Service
 public class ProdutoService {
 
@@ -34,4 +36,7 @@ public class ProdutoService {
         produtoRepository.update(produto);
     }
 
+    public Optional<Produto> buscarPorId (int idProduto){
+        return Optional.ofNullable(produtoRepository.get(idProduto));
+    }
 }

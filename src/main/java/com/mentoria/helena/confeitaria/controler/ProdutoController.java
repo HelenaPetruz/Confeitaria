@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/produtos")
@@ -38,5 +39,16 @@ public class ProdutoController {
     @PutMapping
     public void alterarProduto(@RequestBody Produto produto){
         produtoService.alterarProduto(produto);
+    }
+
+    @PutMapping("/{idProduto}")
+    public ResponseEntity<Void> alterarProdutoPorId (@PathVariable int idProduto, @RequestBody Produto produto){
+        Optional<Produto> possivelProduto = produtoService.buscarPorId(idProduto);
+        if (possivelProduto.isEmpty()){
+            return ResponseEntity.badRequest().build();
+        }
+        produto.setIdProduto(idProduto);
+        produtoService.alterarProduto(produto);
+        return ResponseEntity.noContent().build();
     }
 }
