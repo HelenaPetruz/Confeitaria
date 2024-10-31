@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/funcionarios")
@@ -36,6 +37,17 @@ public class FuncionarioController {
     @PutMapping
     public void alterarFuncionario(@RequestBody Funcionario funcionario){
         funcionarioService.alterarFuncionario(funcionario);
+    }
+
+    @PutMapping("/{idFuncionario}")
+    public ResponseEntity<Void> alterarFuncionarioPorId (@PathVariable int idFuncionario, @RequestBody Funcionario funcionario){
+        Optional<Funcionario> possivelFuncionario = funcionarioService.buscarPorId(idFuncionario);
+        if (possivelFuncionario.isEmpty()){
+            return ResponseEntity.badRequest().build();
+        }
+        funcionario.setIdFuncionario(idFuncionario);
+        funcionarioService.alterarFuncionario(funcionario);
+        return ResponseEntity.noContent().build();
     }
 
 }

@@ -6,6 +6,7 @@ import com.mentoria.helena.confeitaria.repository.IFuncionarioRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class FuncionarioService {
@@ -29,5 +30,9 @@ public class FuncionarioService {
 
     public void alterarFuncionario (Funcionario funcionario){
         funcionarioRepository.update(funcionario);
+    }
+
+    public Optional<Funcionario> buscarPorId (int idFuncionario){
+        return Optional.ofNullable(funcionarioRepository.get(idFuncionario));
     }
 }
