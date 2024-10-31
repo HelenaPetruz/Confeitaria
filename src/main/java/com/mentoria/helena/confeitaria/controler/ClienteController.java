@@ -25,6 +25,11 @@ public class ClienteController {
                 return ResponseEntity.ok(lista);
     }
 
+    @GetMapping("/{idCliente}")
+    public Optional<Cliente> buscarClientePorId (@PathVariable int idCliente){
+        return clienteService.buscarPorId(idCliente);
+    }
+
     @GetMapping("/mais-velho")
     public ResponseEntity<Cliente> clienteMaisVelho() {
         return ResponseEntity.ok(clienteService.clienteMaisVelho());
