@@ -31,6 +31,11 @@ public class ProdutoController {
         return ResponseEntity.ok(lista);
     }
 
+    @GetMapping("/{idProduto}")
+    public Optional<Produto> buscarProdutoPorId (@PathVariable int idProduto){
+        return produtoService.buscarPorId(idProduto);
+    }
+
     @DeleteMapping("/{idProduto}")
     public void removerProduto (@PathVariable("idProduto") int idProduto){
         produtoService.removerProduto(idProduto);
